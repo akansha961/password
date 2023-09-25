@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="background-image"></div>
+    <div class="container">
+        <h1>Password Manager</h1></br>
+        <div class="password-form">
+            <label for="password">Enter Password:</label></br>
+            <input type="password" id="password" placeholder="ENTER YOUR PASSWORD" required>
+            <div id="password-strength"></div></br>
+
+            <div id="password-conditions">
+                <ul>
+                    <li id="uppercase">At least 1 uppercase character</li>
+                    <li id="lowercase">At least 1 lowercase character</li>
+                    <li id="digit">At least 1 digit</li>
+                    <li id="specialchar">At least 1 special character</li>
+                    <li id="length">Minimum 8 characters</li>
+                </ul>
+            </div>
+        </br>
+            <button id="add-password">Add Password</button>
+        </div>
+        <div class="password-list">
+            <h2>Saved Passwords</h2>
+            <ul id="password-list">
+                <!-- Saved passwords will be displayed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
